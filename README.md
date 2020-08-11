@@ -4,6 +4,7 @@
 ## 文档构建
 * [Vuepress](https://www.vuepress.cn)
 * [Read The Doc 网站](https://readthedocs.org)
+  * [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html)
 
 ## Vuepress 环境
 ```bash
@@ -22,13 +23,17 @@ npx vuepress dev docs
 * Windows
 
 ```bash
-python -m venv ids4doc
-.\ids4doc\Scripts\activate
+python -m venv ids4doc.venv
+.\ids4doc.venv\Scripts\activate
+python -m pip install --upgrade pip 
+pip install -r requirements.txt
 ```
 
 * Linux \ Mac
     
 ```bash
-python3 -m venv ids4doc
-source ids4doc/bin/activate
+python3 -m venv ids4doc.venv
+source ids4doc.venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
 ```

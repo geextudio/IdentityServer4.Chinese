@@ -220,6 +220,7 @@ venv.bak/
 
 ids4/
 ids4doc/
+ids4doc.venv/
 
 # Spyder project settings
 .spyderproject
