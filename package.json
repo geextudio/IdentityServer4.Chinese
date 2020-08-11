@@ -1,0 +1,11 @@
+{
+  "name": "geextudio.IdentityServer4.Chinese",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/geextudio/IdentityServer4.Chinese",
+  "author": "Yang SHEN <geextudio@commscope.com>",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
