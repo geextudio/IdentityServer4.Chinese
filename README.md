@@ -23,6 +23,8 @@ echo '# Hello Identity Server!' > docs/README.md
 npx vuepress dev docs
 ```
 
+> 部署到[Vercel](https://vercel.com/guides/deploying-vuepress-to-vercel)
+
 ## Python 虚拟环境
 
 * Windows

@@ -1,19 +1,20 @@
 module.exports = {
     title: 'Identity Server Stories',
     description: 'Just learn something about Identity Server',
-
+    dest: 'public',
+    
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
           lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-          title: 'Identity Server 那些事儿',
+          title: '《Identity Server 那些事儿》终于与您见面啦!',
           description: '搞清楚 Identity Server 的那些事儿是怎么回事儿.'
         },
 
         '/en/': {
           lang: 'en-US',
-          title: 'Identity Server Stories',
+          title: 'Welcome to The Identity Server Stories!',
           description: 'Just learn something about Identity Server.'
         }
       },
@@ -38,9 +39,11 @@ module.exports = {
                 },
                 // 当前 locale 的 algolia docsearch 选项
                 algolia: {},
-                nav: [
+
+                // 导航菜单
+               /*  nav: [
                   { text: '嵌套', link: '/zh/nested/' }
-                ],
+                ], */
                 sidebar: {
                   '/zh/': [/* ... */],
                   '/zh/nested/': [/* ... */]
@@ -60,9 +63,11 @@ module.exports = {
                     }
                 },
                 algolia: {},
-                nav: [
+
+                // navigator
+               /*  nav: [
                 { text: 'Nested', link: '/nested/', ariaLabel: 'Nested' }
-                ],
+                ], */
                 sidebar: {
                 '/': [/* ... */],
                 '/nested/': [/* ... */]
