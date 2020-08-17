@@ -1,7 +1,7 @@
-# Identity Server 4 那些事儿
-通过以下方式基本搞清楚 Identity Server 4 的那些事儿
+# Identity Server 那些事儿
+通过以下方式基本搞清楚 Identity Server 的那些事儿
 
-* 对 [Identity Server 4 英文文档](https://identityserver4.readthedocs.io/en/latest/) 中文翻译来学习这项技术
+* 对 [Identity Server 英文文档](https://identityserver4.readthedocs.io/en/latest/) 中文翻译来学习这项技术
 * 整理总结相关知识点扩展
 
 Note：不是简单的英翻中，原文档中一些特定意义英文名词将保留英文，否则可能会让读者看得莫名其妙.
