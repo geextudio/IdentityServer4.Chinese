@@ -11,7 +11,7 @@ Note：不是简单的英翻中，原文档中一些特定意义英文名词将�
 * [Read The Doc 网站](https://readthedocs.org)
   * [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html)
 
-## Vuepress 环境
+## Vuepress 环境 (含中英文切换)
 ```bash
 # 安装依赖
 yarn
