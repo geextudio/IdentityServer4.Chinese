@@ -8,13 +8,13 @@ module.exports = {
         // 作为特例，默认语言可以使用 '/' 作为其路径。
         '/': {
           lang: 'zh-CN', // 将会被设置为 <html> 的 lang 属性
-          title: '《Identity Server 那些事儿》终于与您见面啦!',
+          title: '《Identity Server 那些事儿》',
           description: '搞清楚 Identity Server 的那些事儿是怎么回事儿.'
         },
 
         '/en/': {
           lang: 'en-US',
-          title: 'Welcome to The Identity Server Stories!',
+          title: 'The Identity Server Stories!',
           description: 'Just learn something about Identity Server.'
         }
       },
