@@ -14,8 +14,6 @@ Note：不是简单的英翻中，原文档中一些特定意义英文名词将�
 
 ## 文档构建
 * [Vuepress](https://www.vuepress.cn)
-* [Read The Doc 网站](https://readthedocs.org)
-  * [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html)
 
 ## Vuepress 环境 (含[中英文](https://www.vuepress.cn/guide/i18n.html#%E7%AB%99%E7%82%B9%E5%A4%9A%E8%AF%AD%E8%A8%80%E9%85%8D%E7%BD%AE)切换)
 ```bash
@@ -31,22 +29,3 @@ npx vuepress dev docs
 
 > 部署到[Vercel](https://vercel.com/guides/deploying-vuepress-to-vercel) URL : https://ids-story.now.sh
 
-## Python 虚拟环境
-
-* Windows
-
-```bash
-python -m venv ids4doc.venv
-.\ids4doc.venv\Scripts\activate
-python -m pip install --upgrade pip 
-pip install -r requirements.txt
-```
-
-* Linux \ Mac
-    
-```bash
-python3 -m venv ids4doc.venv
-source ids4doc.venv/bin/activate
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
