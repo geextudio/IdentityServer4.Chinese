@@ -1,5 +1,11 @@
 # Identity Server 那些事儿
-通过以下方式基本搞清楚 Identity Server 的那些事儿
+
+![ids logo image](https://identityserver4.readthedocs.io/en/latest/_images/logo.png)
+
+
+Identity Server 是构建在 ASP.NET Core 之上基于 OpenID Connect 与 OAuth 2.0 的强大且灵活的 Authentication & Authorization 框架。
+
+我们通过以下方式基本搞清楚 Identity Server 的那些事儿
 
 * 对 [Identity Server 英文文档](https://identityserver4.readthedocs.io/en/latest/) 中文翻译来学习这项技术
 * 整理总结相关知识点扩展
