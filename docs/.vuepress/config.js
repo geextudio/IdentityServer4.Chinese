@@ -21,6 +21,21 @@ module.exports = {
 
 
       themeConfig: {
+        logo: 'https://identityserver4.readthedocs.io/en/latest/_images/logo.png',
+/* 
+        nav: [
+          { text: 'Home', link: '/' },
+          
+          { text: 'Guide', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+        ],
+
+        // sidebar: https://www.vuepress.cn/theme/default-theme-config.html#%E4%BE%A7%E8%BE%B9%E6%A0%8F
+        sidebar: [
+          '/',
+          '/page-a',
+          ['/page-b', 'Explicit link text']
+        ], */
+
         locales: {
 
             '/': {
@@ -41,9 +56,10 @@ module.exports = {
                 algolia: {},
 
                 // 导航菜单
-               /*  nav: [
-                  { text: '嵌套', link: '/zh/nested/' }
-                ], */
+                nav: [
+                  { text: '首页', link: '/' },          
+                  { text: '官方文档', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+                ],
                 sidebar: {
                   '/zh/': [/* ... */],
                   '/zh/nested/': [/* ... */]
@@ -65,9 +81,11 @@ module.exports = {
                 algolia: {},
 
                 // navigator
-               /*  nav: [
-                { text: 'Nested', link: '/nested/', ariaLabel: 'Nested' }
-                ], */
+                nav: [
+                  { text: 'Home', link: '/en/' },          
+                  { text: 'Guide', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+                ],
+
                 sidebar: {
                 '/': [/* ... */],
                 '/nested/': [/* ... */]

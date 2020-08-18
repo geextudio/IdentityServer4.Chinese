@@ -5,8 +5,8 @@ lang: zh-CN
 heroImage: https://identityserver4.readthedocs.io/en/latest/_images/logo.png
 heroText: Identity Server 那些事儿
 tagline: ASP.NET Core + ( OpenID Connect & OAuth 2.0 )
-actionText: null
-actionLink: /
+actionText: 开启旅程 →
+actionLink: /introduction/
 features:
 - title: 认证即服务
   details: 对 OpenID Connect 的实现，中心化的登录逻辑与工作流。

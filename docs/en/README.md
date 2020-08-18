@@ -5,8 +5,8 @@ lang: en-US
 heroImage: https://identityserver4.readthedocs.io/en/latest/_images/logo.png
 heroText: Identity Server Stories
 tagline: ASP.NET Core + ( OpenID Connect & OAuth 2.0 )
-actionText: null
-actionLink: /en/
+actionText: Let's go! →
+actionLink: /en/introduction/
 features:
 - title: Authentication as a Service
   details: Centralized login logic and workflow for all of your applications. IdentityServer is an officially certified implementation of OpenID Connect.
