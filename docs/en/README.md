@@ -20,5 +20,5 @@ features:
   details: Can be customized to fit your needs。
 - title: Mature Open Source
   details: Uses the permissive Apache 2 license that allows building commercial products on top of it. It is also part of the .NET Foundation which provides governance and legal backing. 
-footer: GPL-3.0 Licensed | Copyright © 2018-present Geextudio
+footer: GPL-3.0 Licensed | Copyright © 2019-present Geextudio
 ---
