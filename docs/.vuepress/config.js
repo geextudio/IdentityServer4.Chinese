@@ -21,15 +21,35 @@ module.exports = {
 
 
       themeConfig: {
+        logo: 'https://identityserver4.readthedocs.io/en/latest/_images/logo.png',
+/* 
+        nav: [
+          { text: 'Home', link: '/' },
+          
+          { text: 'Guide', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+        ],
+
+        // sidebar: https://www.vuepress.cn/theme/default-theme-config.html#%E4%BE%A7%E8%BE%B9%E6%A0%8F
+        sidebar: [
+          '/',
+          '/page-a',
+          ['/page-b', 'Explicit link text']
+        ], */
+
         locales: {
 
             '/': {
+                lang: 'zh-CN',
+
                 // 多语言下拉菜单的标题
                 selectText: '选择语言',
+
                 // 该语言在下拉菜单中的标签
                 label: '简体中文',
+
                 // 编辑链接文字
                 editLinkText: '在 GitHub 上编辑此页',
+
                 // Service Worker 的配置
                 serviceWorker: {
                   updatePopup: {
@@ -37,21 +57,47 @@ module.exports = {
                     buttonText: "刷新"
                   }
                 },
+
                 // 当前 locale 的 algolia docsearch 选项
                 algolia: {},
 
                 // 导航菜单
-               /*  nav: [
-                  { text: '嵌套', link: '/zh/nested/' }
-                ], */
-                sidebar: {
-                  '/zh/': [/* ... */],
-                  '/zh/nested/': [/* ... */]
-                }
+                nav: [
+                  { text: '首页', link: '/' },          
+                  { text: '官方文档', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+                  { text: 'Github', link: 'https://github.com/geextudio/IdentityServer4.Chinese' },
+                ],
+
+                //侧边栏
+                sidebar: [
+                  {
+                    title: '基本常识',   // 必要的
+                    //path: '/introduction/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                      '/introduction/',
+                      '/introduction/big_picture'
+                    ]
+                  },
+
+                 /*  {
+                    title: '快速入门',
+                    path: '/introduction/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 1,    // 可选的, 默认值是 1
+                    children: [
+                      '/',
+                      '/big_picture'
+                    ]
+                  } */
+                ]
+
               },  
             
 
             '/en/': {
+                lang: 'en-US', 
                 selectText: 'Languages',
                 label: 'English',
                 ariaLabel: 'Languages',
@@ -65,13 +111,25 @@ module.exports = {
                 algolia: {},
 
                 // navigator
-               /*  nav: [
-                { text: 'Nested', link: '/nested/', ariaLabel: 'Nested' }
-                ], */
-                sidebar: {
-                '/': [/* ... */],
-                '/nested/': [/* ... */]
-                }
+                nav: [
+                  { text: 'Home', link: '/en/' },          
+                  { text: 'Guide', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+                  { text: 'Github', link: 'https://github.com/geextudio/IdentityServer4.Chinese' },
+                ],
+
+                sidebar: [
+                  {
+                    title: 'INTRODUCTION',   // 必要的
+                    //path: '/en/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 1,    // 可选的, 默认值是 1
+                    children: [
+                      '/en/introduction/',
+                      '/en/introduction/big_picture'
+                    ]
+                  },
+
+                ]
             }
             
         }

@@ -1,0 +1,12 @@
+- title: 认证即服务
+  details: 对 OpenID Connect 的实现，中心化的登录逻辑与工作流。
+- title: 单点登录
+  details: 对各类应用提供单点登录（及登出）支持。  
+- title: API 的访问控管
+  details: 签发 access token 来支持各类客户端对 API 的访问。    
+- title: 网管联盟
+  details: 支持第三方的身份服务，比如对 Azure Active Directory、Google、Facebook 等统一接口支持.
+- title: 高可定制化
+  details: 根据用户的实际需求进行定制化。
+- title: 成熟的开源生态
+  details: 基于 Apache-2 开源证书，支持商业应用场景，同时受到 .NET 基金会的监督和背书。  
