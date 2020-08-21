@@ -65,6 +65,7 @@ module.exports = {
                 nav: [
                   { text: '首页', link: '/' },          
                   { text: '官方文档', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+                  { text: 'Github', link: 'https://github.com/geextudio/IdentityServer4.Chinese' },
                 ],
 
                 //侧边栏
@@ -113,6 +114,7 @@ module.exports = {
                 nav: [
                   { text: 'Home', link: '/en/' },          
                   { text: 'Guide', link: 'https://identityserver4.readthedocs.io/en/latest/' },
+                  { text: 'Github', link: 'https://github.com/geextudio/IdentityServer4.Chinese' },
                 ],
 
                 sidebar: [

@@ -12,6 +12,7 @@ features:
   details: 方便切换英文（原文）与中文(译文)。
 - title: 代码落地
   details: 文档中的对应代码开箱即用 ( Github Repository )
-- title: 
+- title: 持续扩展
+  details: 原文档中的一些概念与技术进一步的探讨
 footer: GPL-3.0 Licensed | Copyright © 2019-present Geextudio
 ---
