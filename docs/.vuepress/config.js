@@ -1,4 +1,13 @@
 module.exports = {
+
+    configureWebpack: {
+      resolve: {
+        alias: {
+          '@intrimg': '../../static/images'
+        }
+      }
+    },
+
     title: 'Identity Server Stories',
     description: 'Just learn something about Identity Server',
     dest: 'public',
@@ -18,7 +27,6 @@ module.exports = {
           description: 'Just learn something about Identity Server.'
         }
       },
-
 
       themeConfig: {
         logo: 'https://identityserver4.readthedocs.io/en/latest/_images/logo.png',

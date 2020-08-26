@@ -6,7 +6,7 @@ lang: zh-CN
 
 大部分现代应用差不多是如下的样子:
 
-![nosecurity](https://images2017.cnblogs.com/blog/585526/201707/585526-20170730210302068-1103356180.png)
+![nosecurity](~@intrimg/585526-20170730210302068-1103356180.png)
 
 所涉及主要的交互包括:
 
@@ -19,11 +19,11 @@ lang: zh-CN
 
 每一层（前端、中间层及后端）都必须通过实现认证及授权功能对资源进行保护，这些通常运行在相同的用户存储上。
 
-把这类基础的安全功能交给一个 security token (安全令牌) 服务, 可以减少在不同应用和端点上的重复开发.
+把这类基础的安全功能交给一个 security token (安全令牌) 服务, 可以减少在不同应用和端点 (endpoints) 上的重复开发.
 
 重新组织一下这些应用以支持 security token 服务，体现在如下的架构和协议：
 
-![securitycase](https://images2017.cnblogs.com/blog/585526/201707/585526-20170730210318005-958743848.png)
+![securitycase](~@intrimg/585526-20170730210318005-958743848.png)
 
 以上设计安全划分成两个部分:
 
@@ -43,16 +43,16 @@ OAuth2 协议被应用程序用来向 security token 服务请求 access token�
 
 ## **OpenID Connect 与 OAuth 2.0 相得益彰**
 
-OpenID Connect and OAuth 2.0 are very similar – in fact OpenID Connect is an extension on top of OAuth 2.0. The two fundamental security concerns, authentication and API access, are combined into a single protocol - often with a single round trip to the security token service.
+OpenID Connect 与 OAuth 2.0 非常相似 – **OpenID Connect 实际上是建立在 OAuth 2.0 之上的扩展**. 从此两个基础的安全问题（身份认证与 API 访问控制）被合并为一个协议 - 通常这只是与 security token 服务的一次往返交互.
 
-We believe that the combination of OpenID Connect and OAuth 2.0 is the best approach to secure modern applications for the foreseeable future. IdentityServer4 is an implementation of these two protocols and is highly optimized to solve the typical security problems of today’s mobile, native and web applications.
+我们相信, 在可预见的未来，把 OpenID Connect 和 OAuth 2.0 合并起来是对于现代应用程序的安全而言是最佳选择. IdentityServer4 对上述两个协议进行了实现，并针对移动应用、原生应用和 web 应用的典型安全问题的解决方案进行了高度优化.
 
 ## **IdentityServer4 如何从中相助**
 
-IdentityServer is middleware that adds the spec compliant OpenID Connect and OAuth 2.0 endpoints to an arbitrary ASP.NET Core application.
+IdentityServer 作为一种中间件，它可以把符合规格的 OpenID Connect 与 OAuth 2.0 端点 (endpoints) 添加到任何 ASP.NET 应用程序中.
 
-Typically, you build (or re-use) an application that contains a login and logout page (and maybe consent - depending on your needs), and the IdentityServer middleware adds the necessary protocol heads to it, so that client applications can talk to it using those standard protocols.
+通常, 我们会构建（或者重用）一个包含登录及登出页面的应用程序, 而 IdentityServer 作为中间件会添加必要的协议头到这个页面, 于是，客户端应用程序都能通过标准协议与之建立沟通.
 
-![idshelp](https://images2017.cnblogs.com/blog/585526/201707/585526-20170730211443349-584041189.png)
+![idshelp](~@intrimg/585526-20170730211443349-584041189.png)
 
-The hosting application can be as complex as you want, but we typically recommend to keep the attack surface as small as possible by including authentication related UI only.
+无论承载应用程序有多么复杂, 我们通常建议将受到攻击的页面尽可能缩小，即只包含身份认证相关的界面元素.
