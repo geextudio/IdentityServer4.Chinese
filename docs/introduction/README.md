@@ -5,7 +5,7 @@ footer: GPL-3.0 Licensed | Copyright © 2018-present Geextudio
 ---
 # 欢迎使用 IdentityServer 4
 
-IdentityServer4 是一个运行在 ASP.NET Core 上的 OpenID Connect 和 OAuth 2.0 框架.
+IdentityServer4 是一个运行在 ASP.NET Core 上的 [OpenID Connect](https://www.cnblogs.com/cgzl/p/9231219.html) 和 [OAuth 2.0](https://www.cnblogs.com/cgzl/p/9221488.html) 框架.
 
 它为应用提供了如下功能:
 
