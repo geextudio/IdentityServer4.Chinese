@@ -85,7 +85,8 @@ module.exports = {
                     sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
                       '/introduction/',
-                      '/introduction/big_picture'
+                      '/introduction/big_picture',
+                      '/introduction/terminology'
                     ]
                   },
 
@@ -133,7 +134,8 @@ module.exports = {
                     sidebarDepth: 1,    // 可选的, 默认值是 1
                     children: [
                       '/en/introduction/',
-                      '/en/introduction/big_picture'
+                      '/en/introduction/big_picture',
+                      '/en/introduction/terminology'
                     ]
                   },
 
