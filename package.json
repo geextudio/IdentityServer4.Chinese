@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/geextudio/IdentityServer4.Chinese",
-  "author": "Yang SHEN <geextudio@commscope.com>",
+  "author": "Yang SHEN <geextudio@outlook.com>",
   "license": "GPL-3.0",
   "scripts": {
     "dev":"vuepress dev docs",
