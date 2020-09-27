@@ -1,16 +1,16 @@
 ---
-title: 专业术语
+title: 术语
 lang: zh-CN
 ---
-# 专业术语
+# 术语
 
-The specs, documentation and object model use a certain terminology that you should be aware of.
+规范、文档和对象模型中用到了一些需知道的术语.
 
 ![terminology_image](https://identityserver4.readthedocs.io/en/latest/_images/terminology.png)
 
 ## IdentityServer
 
-IdentityServer is an OpenID Connect provider - it implements the OpenID Connect and OAuth 2.0 protocols.
+IdentityServer 是 OpenID Connect 提供程序 - 它实现 OpenID Connect 和 OAuth 2.0 协议.
 
 Different literature uses different terms for the same role - you probably also find security token service,
 identity provider, authorization server, IP-STS and more.
