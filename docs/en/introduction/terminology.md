@@ -20,15 +20,10 @@ But they are in a nutshell all the same: a piece of software that issues securit
 IdentityServer has a number of jobs and features - including:
 
 * protect your resources
-
 * authenticate users using a local account store or via an external identity provider
-
 * provide session management and single sign-on
-
 * manage and authenticate clients
-
 * issue identity and access tokens to clients
-
 * validate tokens
 
 ## User
