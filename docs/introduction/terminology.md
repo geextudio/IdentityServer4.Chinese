@@ -4,63 +4,65 @@ lang: zh-CN
 ---
 # 术语
 
-规范、文档和对象模型中用到了一些需知道的术语.
+规范、文档和对象模型中用到了一些需要知道的术语.
 
 ![terminology_image](https://identityserver4.readthedocs.io/en/latest/_images/terminology.png)
 
 ## IdentityServer
 
-IdentityServer 是 OpenID Connect 提供程序 - 它实现 OpenID Connect 和 OAuth 2.0 协议.
+IdentityServer 是 OpenID Connect 提供程序 - 它实现了 OpenID Connect 和 OAuth 2.0 协议.
+此处不同的文字描述了同一个角色的不同形式——你或许同样发现安全令牌服务、身份提供者、授权服务器、IP-STS等.
+他们其实都是同一回事儿，即向客户端签发安全令牌的软件.
 
-Different literature uses different terms for the same role - you probably also find security token service,
-identity provider, authorization server, IP-STS and more.
+IdentityServer 包含如下职责与功能:
 
-But they are in a nutshell all the same: a piece of software that issues security tokens to clients.
+* 保护你的资源
+* 通过内部账户系统或者外部身份提供程序来识别用户
+* 提供 session 管理与单点登录的能力
+* 管理和识别客户端
+* 向客户端签发身边与访问令牌
+* 验证令牌
 
-IdentityServer has a number of jobs and features - including:
 
-* protect your resources
+## 用户
 
-* authenticate users using a local account store or via an external identity provider
+用户是一个使用已注册的客户端访问资源的人.
 
-* provide session management and single sign-on
 
-* manage and authenticate clients
+## 客户端
 
-* issue identity and access tokens to clients
+客户端是一个向 IdentityServer 软件请求令牌的软件——既用来识别用户 ( 通过身份令牌 ) 又可以用来访问资源 ( 通过访问令牌 ).
 
-* validate tokens
+客户端必须事先在 IdentityServer 上注册才能请求令牌.
 
-## User
+常见的客户端例子包括 web 应用、原生移动或者桌面应用、单页应用及服务端进程等.
 
-A user is a human that is using a registered client to access resources.
+## 资源
 
-## Client
+资源是 IdentityServer 所保护的东西，包括用户用户身份数据、API. 
 
-A client is a piece of software that requests tokens from IdentityServer - either for authenticating a user (requesting an identity token) 
-or for accessing a resource (requesting an access token). A client must be first registered with IdentityServer before it can request tokens.
+每一个资源都有唯一的名称，而客户端则通过这个名称来对应它们所需要访问的资源.
 
-Examples for clients are web applications, native mobile or desktop applications, SPAs, server processes etc.
 
-## Resources
+**身份数据**
 
-Resources are something you want to protect with IdentityServer - either identity data of your users, or APIs. 
+身份信息 ( 亦称声明 ) 用来描述一个用户，比如名字或者电子邮件地址. 
 
-Every resource has a unique name - and clients use this name to specify to which resources they want to get access to.
 
-**Identity data**
-Identity information (aka claims) about a user, e.g. name or email address.
+**API**
 
-**APIs**
-APIs resources represent functionality a client wants to invoke - typically modelled as Web APIs, but not necessarily.
+API 资源是客户端需要调用的功能——通常是一些 Web API.
 
-## Identity Token
 
-An identity token represents the outcome of an authentication process. It contains at a bare minimum an identifier for the user 
-(called the `sub` aka subject claim) and information about how and when the user authenticated.  It can contain additional identity data.
+## 身份令牌
 
-## Access Token
+身份令牌由一个身份识别进程产生, 它提供了用户一个最简单的识别内容，以及如何与何时对这个用户进行识别的. 此外，身份令牌还可以包含额外的识别数据.
 
-An access token allows access to an API resource. Clients request access tokens and forward them to the API. 
-Access tokens contain information about the client and the user (if present).
-APIs use that information to authorize access to their data.
+
+## 访问令牌
+
+通过访问令牌才能访问对应的 API 资源. 客户端请求访问令牌，然后把令牌转发给 API.
+
+访问令牌包含了客户端信息，及用户信息( 如果有的话) 
+
+API 根据所接收的客户端发来的令牌信息来控制客户端对 API 数据的访问授权.
