@@ -90,16 +90,16 @@ module.exports = {
                     ]
                   },
 
-                 /*  {
+                  {
                     title: '快速入门',
-                    path: '/introduction/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    path: '/quickstart/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
                     collapsable: true, // 可选的, 默认值是 true,
-                    sidebarDepth: 1,    // 可选的, 默认值是 1
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
                     children: [
-                      '/',
-                      '/big_picture'
+                      '/quickstart/',
+                      '/quickstart/addjsclient'
                     ]
-                  } */
+                  } 
                 ]
 
               },  
@@ -139,6 +139,16 @@ module.exports = {
                     ]
                   },
 
+                  {
+                    title: 'QUICKSTART',
+                    path: '/en/quickstart/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+                    collapsable: true, // 可选的, 默认值是 true,
+                    sidebarDepth: 2,    // 可选的, 默认值是 1
+                    children: [
+                      '/en/quickstart/',
+                      '/en/quickstart/addjsclient'
+                    ]
+                  } 
                 ]
             }
             
